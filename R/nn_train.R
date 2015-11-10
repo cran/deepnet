@@ -108,7 +108,12 @@ nn.train <- function(x,y,initW=NULL,initB=NULL,hidden=c(10),
 		}
 		#last fraction of sample
 		if(numbatches > as.integer(numbatches)){
-			batch_x <- x[randperm[(as.integer(numbatches)*batchsize):m], ]
+			# Why are you using different random batches for x and y, the labels won't match. Shouldn't
+			# you create  a variable:
+			# slice <- randperm[(as.integer(numbatches)*batchsize):m]
+			# and then use it for both x and y, so:
+			# batch_x <- x[slice,] ; batch_y <- y[slice] or y[slice,]
+			batch_x <- x[randperm[(as.integer(numbatches)*batchsize):m], ] 
 			if(is.vector(y)){
 				batch_y <- y[randperm[(as.integer(numbatches)*batchsize):m]]
 			}else if(is.matrix(y)){
