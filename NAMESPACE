@@ -7,3 +7,7 @@ export(rbm.down)
 export(rbm.train)
 export(rbm.up)
 export(sae.dnn.train)
+
+importFrom("grDevices", "gray")
+importFrom("graphics", "image")
+importFrom("stats", "runif")

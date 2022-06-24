@@ -1,14 +1,14 @@
 Package: deepnet
 Type: Package
-Title: deep learning toolkit in R
-Version: 0.2
+Title: Deep Learning Toolkit in R
+Version: 0.2.1
 Date: 2014-03-20
 Author: Xiao Rong
 Maintainer: Xiao Rong <runxiao@gmail.com>
 Description: Implement some deep learning architectures and neural network
     algorithms, including BP,RBM,DBN,Deep autoencoder and so on.
 License: GPL
-Packaged: 2014-03-20 08:06:35 UTC; xiaorong.xr
+Packaged: 2022-06-24 12:10:21 UTC; hornik
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-03-20 10:03:43
+Date/Publication: 2022-06-24 12:29:27 UTC
